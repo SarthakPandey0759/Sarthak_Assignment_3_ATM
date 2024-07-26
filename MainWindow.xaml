@@ -1,0 +1,54 @@
+﻿<Window x:Class="Sarthak_Assignment_3_ATM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ATM Menu" Height="450" Width="800"
+        Background="LightGreen">
+    <!-- Window background color -->
+    <Grid Background="White">
+        <!-- Grid background color -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Left panel for account creation and selection -->
+        <StackPanel Grid.Column="0" Margin="10">
+            <TextBlock Text="ATM Main Menu" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <Button Name="CreateAccountButton" Content="Create Account" Height="40" Margin="0,0,0,10" Background="Green" Foreground="White" Click="CreateAccountButton_Click"/>
+
+            <TextBlock Text="Account Number" Margin="0,10,0,0"/>
+            <TextBox Name="AccountNumberTextBox" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Account Holder's Name" Margin="0,10,0,0"/>
+            <TextBox Name="AccountHolderNameTextBox" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Initial Balance" Margin="0,10,0,0"/>
+            <TextBox Name="InitialBalanceTextBox" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Interest Rate" Margin="0,10,0,0"/>
+            <TextBox Name="InterestRateTextBox" Height="30" Margin="0,0,0,10"/>
+
+            <Button Name="SelectAccountButton" Content="Select Account" Height="40" Margin="0,10,0,10" Background="Green" Foreground="White" Click="SelectAccountButton_Click"/>
+
+            <Button Name="ExitButton" Content="Exit" Height="40" Margin="0,10,0,10" Background="Green" Foreground="White" Click="ExitButton_Click"/>
+
+            <Button Name="OpenAccountOperationsButton" Content="Open Account Operations" Height="40" Margin="0,10,0,10" Background="Green" Foreground="White" Click="OpenAccountOperationsButton_Click"/>
+        </StackPanel>
+
+        <!-- Right panel for account details and operations -->
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Account Operations" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Current Balance" Margin="0,10,0,0"/>
+            <TextBox Name="CurrentBalanceTextBox" Height="30" Margin="0,0,0,10" IsReadOnly="True" Background="LightGray"/>
+
+            <TextBlock Text="Amount" Margin="0,10,0,0"/>
+            <TextBox Name="AmountTextBox" Height="30" Margin="0,0,0,10"/>
+
+            <Button Name="DepositButton" Content="Deposit" Height="40" Margin="0,10,0,10" Background="Green" Foreground="White" Click="DepositButton_Click"/>
+            <Button Name="WithdrawButton" Content="Withdraw" Height="40" Margin="0,10,0,10" Background="Green" Foreground="White" Click="WithdrawButton_Click"/>
+            <Button Name="CheckBalanceButton" Content="Check Balance" Height="40" Margin="0,10,0,10" Background="Green" Foreground="White" Click="CheckBalanceButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

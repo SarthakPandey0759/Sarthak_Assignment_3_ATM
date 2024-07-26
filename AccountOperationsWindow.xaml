@@ -1,0 +1,20 @@
+﻿<Window x:Class="Sarthak_Assignment_3_ATM.AccountOperationsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Account Operations" Height="300" Width="400">
+    <Grid>
+        <!-- Layout for account operations, similar to MainWindow -->
+        <StackPanel Margin="10">
+            <TextBlock Text="Account Operations" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Current Balance" Margin="0,10,0,0"/>
+            <Label Name="AccountBalanceLabel" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Amount" Margin="0,10,0,0"/>
+            <TextBox Name="AmountTextBox" Height="30" Margin="0,0,0,10"/>
+
+            <Button Name="DepositButton" Content="Deposit" Height="40" Margin="0,10,0,10" Click="DepositButton_Click"/>
+            <Button Name="WithdrawButton" Content="Withdraw" Height="40" Margin="0,10,0,10" Click="WithdrawButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

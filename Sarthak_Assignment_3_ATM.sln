@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sarthak_Assignment_3_ATM", "Sarthak_Assignment_3_ATM.csproj", "{C2DE8302-C58C-44BD-B575-FA4B7DB0BCBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2DE8302-C58C-44BD-B575-FA4B7DB0BCBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DE8302-C58C-44BD-B575-FA4B7DB0BCBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DE8302-C58C-44BD-B575-FA4B7DB0BCBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DE8302-C58C-44BD-B575-FA4B7DB0BCBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D3091B6-5912-4F5E-9301-80A927101324}
+	EndGlobalSection
+EndGlobal
